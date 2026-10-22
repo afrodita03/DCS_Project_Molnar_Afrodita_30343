@@ -41,7 +41,7 @@ public class FLRS implements Cloneable, Serializable {
 
 		if (Parts.size() == 5) {
 			header.append("(X1)");
-			line.append("___");
+			line.append("____");
 			int index = 0;
 			for (FZ zone : FZ.values()) {
 				if (zone != FZ.FF) {
