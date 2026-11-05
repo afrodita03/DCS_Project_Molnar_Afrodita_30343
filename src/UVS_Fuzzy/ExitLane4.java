@@ -21,7 +21,7 @@ public class ExitLane4 {
     public static void main(String[] args) {
 
         PetriNet pn = new PetriNet();
-        pn.PetriNetName = "Fuzzy Exit Lane 1";
+        pn.PetriNetName = "Fuzzy Exit Lane 4";
         pn.NetworkPort = 1088;
 
         DataFuzzy input = new DataFuzzy();
