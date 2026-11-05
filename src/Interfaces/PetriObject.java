@@ -29,4 +29,6 @@ public interface PetriObject {
 	public void SetToken(boolean token);
 
 	public boolean GetToken();
+
+	public boolean equals(Object o);
 }

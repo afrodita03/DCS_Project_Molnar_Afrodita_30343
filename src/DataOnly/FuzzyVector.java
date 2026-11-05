@@ -152,4 +152,17 @@ public class FuzzyVector implements Serializable {
 			return;
 		}
 	}
+
+	@Override
+	public boolean equals(Object o) {
+		if (!(o instanceof FuzzyVector))
+			return false;
+
+		FuzzyVector Temp = ((FuzzyVector) o);
+
+		if (!Temp.toString().equals(this.toString()))
+			return false;
+
+		return true;
+	}
 }

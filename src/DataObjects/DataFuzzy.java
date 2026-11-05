@@ -103,4 +103,18 @@ public class DataFuzzy implements Interfaces.PetriObject, Cloneable, Serializabl
 	public boolean GetToken() {
 		return this.token;
 	}
+
+	@Override
+	public boolean equals(Object o) {
+		if (!(o instanceof DataFuzzy)) {
+			return false;
+		}
+
+		DataFuzzy Temp = ((DataFuzzy) o);
+		if (!Temp.Value.equals(this.Value))
+			return false;
+
+		return true;
+	}
+
 }
